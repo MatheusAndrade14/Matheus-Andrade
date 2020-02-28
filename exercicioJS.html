@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta  initial-scale="1.0" charset="UTF-8" meta="viweport" content="width=device-width" >
+<meta http-equiv="Content-Type"  content="text/html" >
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" type="image/jpg" href="img/logo.jpg">
+<title> Matheus Andrade </title>
+</head>
+<body >
+  <nav id="menu">
+
+  <div style= " height:25px; width:auto; border-radius:5px; margin:25px; padding-left:93% ;position:absolute; ">
+  <a style="text-decoration:none; color:gray; " href="login.html">Sair</a>
+  </div>
+  <img  style=" width: 40px;
+    height: 45px;
+    top: 25%;
+    position: absolute;
+    padding-right: 43%;" src="img/logo.jpg">
+	<div style="padding-left: 30%; padding-right:30%; text-align:center; text-size:auto; ">
+    <h1 style="color:gray;"> Matheus Sousa de Andrade</h1>
+	</div>
+
+  <img  style=" width: 40px;
+    height: 45px;
+    top: 25%;
+    position: absolute;
+    padding-left: 43%;" src="img/logo.jpg">
+  </nav>
+
+<header>
+<h1>Verificador de Idade</h1>
+</header>
+
+<section class="section">
+<form action="javascript:Calcular()">
+<div>
+<p>
+<label> Ano de Nascimento: </label>
+<input type="number" min="0" pattern="[0-9,.-,]+$" name="ano" class="campos" id="Nascimento" placeholder="Ano de nascimento" required>
+</p>
+
+
+<p>Sexo:
+
+<input type="radio" name="sexo" id="M" checked value="0">
+<label for="M">Masculino</label>
+
+<input type="radio" name="sexo" id="F" value="1">
+<label for="F">Feminino</label>
+
+</p>
+
+<p>
+<input class="btn" type="submit"  value="Calcular Idade">
+</p>
+
+</div>
+</form>
+
+<div id="foto">
+<h4 id="msg"> </h4>
+<img id="imagem" src="img/int.jpg">
+</div>
+
+<form action="javascript:CalcularIMC()">
+</section >
+<header>
+<h1> Calcular IMC </h1>
+</header>
+<section class="section">
+<div>
+<p>
+<label> Digite seu Peso: </label>
+<input type="numeric" pattern="[0-9,.-,]+$"  placeholder="Kg" id="peso"class="campos"></p>
+
+<p>
+<label> Digite sua Altura: </label>
+<input type="numeric" pattern="[0-9,.-,]+$" placeholder="Altura" id="altura" required class="campos">
+</p>
+<input class="btn" type="submit" value="Calcular IMC" required >
+
+<p id="imc" style="color:gray"></p>
+<p id="feed"style="color:gray"></p>
+<div class="IMCdiv">
+
+
+<div  id="normal">
+  <p id="normal1"></p>
+  <p id="normal2"></p>
+
+</div>
+
+<div  id="acima">
+  <p id="acima1"></p>
+<p id="acima2"></p>
+</div>
+
+
+</div>
+
+<div class="IMCdiv">
+  <div  id="obesidade">
+    <p id="obesidade1"></p>
+    <p id="obesidade2"></p>
+
+  </div>
+
+  <div  id="morbida">
+    <p id="morbida1"></p>
+  <p id="morbida2"></p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+ </section>
+</form>
+ <header>
+
+   <h1> Tabela de Frutas</h1>
+ </header>
+
+
+<section class="section">
+
+
+
+<div>
+
+
+
+<table class="tabela" border="1">
+
+
+
+    <tr>
+<td>Nome</td>
+<td>Valor</td>
+<td>Quantidade</td>
+<td>Total</td>
+    </tr>
+  </thead>
+<tbody id="tabela1">
+    <tr class="produto">
+      <td class="nome">Manga</td>
+      <td class="valor">5.0</td>
+      <td class="quantidade">5.0</td>
+      <td id="total1"></td>
+    </tr>
+    <tr class="produto">
+      <td class="nome">Abacaxi</td>
+      <td class="valor">7.0</td>
+      <td class="quantidade">9.0</td>
+      <td id="total2"></td>
+    </tr>
+    <tr class="produto">
+      <td class="nome">Banana</td>
+      <td class="valor">2.0</td>
+      <td class="quantidade">7.0</td>
+      <td id="total3"></td>
+    </tr>
+
+    </tbody>
+
+
+</table>
+<br>
+<input class="btn" type="button" value="Calcular Total" onclick="javascript:CalcularTot()">
+<form action="javascript:CriarElemento()">
+<h2 style="color:gray">Cadastrar Fruta</h2>
+
+<label> Fruta:</label>
+<input class="campos" type="text" id="nFruta" placeholder="Digite uma Fruta"   required>
+<br>
+<label> Valor:</label>
+<input class="campos" type="numeric" id="vFruta" placeholder="Digite o Valor" pattern="[0-9,.-,]+$" required>
+<br>
+<label> Quantia:</label>
+<input class="campos" type="numeric"  id="qFruta" placeholder="Digite a Quantidade" pattern="[0-9,.-,]+$" required>
+<br><br>
+<input class="btn" type="submit"  value="Cadastrar" onclick="javascript:CalcularTot()">
+
+</form>
+</div>
+</section>
+
+<header>
+  <h1>Calcular Fatorial de um Numero</h1>
+</header>
+<section class="section">
+
+
+<form action="javascript:CalcularFat()">
+  <label>Numero:</label>
+<input type="number" pattern="[0-9]+$" class="campos" id="numeroFat" placeholder="Digite um Número" required>
+<br><br>
+  <input class="btn" value="Calcular" type="submit" >
+
+  <h3 id="msgFat" style="color:gray"></h3>
+
+</form>
+
+</section>
+
+<header> <h1> Inverter frases </h1></header>
+
+
+<section class="section">
+
+<form action="javascript:Inverter()" >
+<label> Frase:</label>
+<input type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required class="campos" id="frase"  placeholder="Digite uma frase"><br> <br>
+
+<input type="submit" class="btn" value="Inverter">
+
+<h1 style="color:gray" id="msgFrase"> </h1>
+
+</form>
+ </section>
+
+
+ <footer>
+ <p>&copy; MatheusAndrade </p>
+ <div id="subirTopo">
+<img style="width:40px;height:40px;"src="img/seta.jpg" alt="Subir ao topo">
+ </div>
+ </footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script  src="js/js.js"> </script>
+ <script  src="js/Loginjs.js"> </script>
+ </body>
+
+</html>
