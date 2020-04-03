@@ -9,7 +9,7 @@
 
 <title> Matheus Andrade </title>
 </head>
-<body>
+<body >
 
 
   <nav id="menu">
@@ -34,22 +34,37 @@
 <section class="section" >
 <div id="Login">
 <h1 style="color:gray;"> Login </h1>
-<form action="javascript:Login()">
+<form action="javascript:Login()" id="form">
 <label>Usuario:</label>
-<input class="campos"type="text" id="user" placeholder="Login" required><br>
+<input class="campos"type="text" id="user" autofocus placeholder="Login" required><br>
 <label>Senha:</label>
 <input class="campos" type="password" id="senha" placeholder="Senha" required><br><br>
 <input class="btn" type="submit" value="Login">
 
-</form><br>
 <p id="erro"></p>
 <br>
  </div>
-</section>
 
+
+</form>
+  
+<p>
+  <a style="text-decoration: none; color: gray; ;" href="javascript:cadastrar()">Quero me cadastrar</a>
+</p>
+  
+</section> 
+
+
+
+
+<p id="conteudo"></p>
  <footer>
+  
  <p>&copy; MatheusAndrade </p>
+ <div id="subirTopo">
+  <img style="width:40px;height:40px;"src="img/seta.jpg" alt="Subir ao topo">
+   </div>
  </footer>
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/Loginjs.js"> </script>
 </body>
