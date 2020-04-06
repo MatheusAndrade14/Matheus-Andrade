@@ -33,28 +33,28 @@ function Calcular(){
     else
     if ( result <=10 && sexo == 1){
     img.src = 'img/criancaF.jpg'
-    // document.body.style.background = '#FFDEAD'
+     document.body.style.background = '#FFDEAD'
     }
     
     else
     if( result > 10 && result <=20 && sexo == 1){
     img.src = 'img/AdolescenteF.jpg'
-    // document.body.style.background = '#F0E68C'
+     document.body.style.background = '#F0E68C'
     
     }
     else if(result > 10 && result <=20 && sexo == 0){
     img.src = 'img/AdolescenteH.jpg'
-    // document.body.style.background = '#5F9EA0'
+     document.body.style.background = '#5F9EA0'
     }
     else
     if (result > 20 && result <=45 && sexo == 0){
     img.src = 'img/AdultoH.jpg'
-    // document.body.style.background = '#87CEFA'
+     document.body.style.background = '#87CEFA'
     
     }
     else if(result > 20 && result <=45 && sexo == 1){
     img.src = 'img/AdultoF.jpg'
-    // document.body.style.background = '#778899'
+     document.body.style.background = '#778899'
     }
     else
     if(result > 45 && result < 120 && sexo == 0){
@@ -64,7 +64,7 @@ function Calcular(){
     }
     else if(result > 45 && result < 120 && sexo == 1){
     img.src = 'img/IdosoF.jpg'
-    // document.body.style.background = '#A52A2A'
+     document.body.style.background = '#A52A2A'
     }
     
     }
