@@ -6,11 +6,14 @@ overflow-x:hidden;
 font: normal 15pt arial;
 
 }
+html,body{
+  padding: 0;
+  margin: 0;
+}
 #menu{
-  border-radius: 30px;
   color: black;
   width: 100%;
-  height: auto;
+  height: 60px;
   background: white;
   justify-content: center;
   display: inline-flex;
@@ -77,6 +80,19 @@ border-radius: 9px;
  font-size: 15px;
  border: none;
 }
+.btn:hover{
+  background: #7fcc7f;
+}
+.btnSair{
+  border-radius: 9px;
+   background-color: #ff4040;
+   color: white;
+   font-size: 15px;
+   border: none;
+  }
+  .btnSair:hover{
+    background: #d85656;
+  }
 .form2{
 text-align: center;
 }
@@ -138,6 +154,7 @@ float: left;
   border: solid 1px;
   border-radius: 5px;
   width: 50%;
+  border-collapse: separate;
 }
 
 
