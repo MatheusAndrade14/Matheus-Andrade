@@ -26,7 +26,7 @@ function Calcular(){
      if(result <= 10 && sexo == 0) {
     
     img.src= 'img/criancaH.jpg'
-    // document.body.style.background = '#F5DEB3'
+    document.body.style.background = '#F5DEB3'
     
     
     }
