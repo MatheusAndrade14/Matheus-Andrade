@@ -7,15 +7,22 @@ text-align:center;
 
 }
 #menu{
-  border-radius: 30px;
+ 
   color: black;
   width: 100%;
-  height: auto;
+  height: 60px;
   background: white;
   justify-content: center;
   display: inline-flex;
   position: relative;
   
+
+}
+a{
+    color: gray;
+}
+a:hover{
+    color: rgb(94, 93, 93);
 
 }
 footer{
@@ -57,6 +64,11 @@ body {
 background:#a0a0a0;
 font: normal 15pt arial;
 
+
+}
+html, body{
+    margin: 0;
+    padding: 0;
 }
 .btn{
 border-radius: 9px;
@@ -65,32 +77,12 @@ border-radius: 9px;
  font-size: 15px;
  border: none;
 }
+.btn:hover{
+    background: #7fcc7f;
+}
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     
     outline: 0;
 }
-#subirTopo {
-    text-decoration: none;
-    border-radius:10px;
-    background: white;
-    bottom: 30px;
-    right: 30px;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: fixed;
-    border: 0;
-    font-family: sans-serif;
-    opacity: .8;
-    }
-    
-    #subirTopo:hover {
-    opacity:1;
-    }
-    
     
