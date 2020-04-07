@@ -10,60 +10,62 @@
 </head>
 <body >
   <nav id="menu">
- <div style=" height:25px; width:90%; margin:25px ;position:absolute; ">
 
-      <input class="btnSair" style=" top: 24%; margin-left:90%; " type="button" name="Sair"
-        onclick="javascript:Sair()" value="Sair">
-  <img  style=" width: 35px;
+    <div style=" height:25px; width:auto; margin:25px; padding-left:93% ;position:absolute; ">
+      <input class="btnSair" style=" top: 24%; margin-right:100px; " type="button" name="Sair"
+      onclick="javascript:Sair()" value="Sair">
+      
+    </div>
+    <img style=" width: 35px;
     height: 40px;
     top: 22%;
     position: absolute;
     padding-right: 43%;" src="img/logo.jpg">
-	<div style="width:60%; text-align:center;  ">
-    <h2 style="color:gray;"> Matheus Sousa de Andrade</h2>
-	</div>
+    <div style="width:60%; text-align:center;  ">
+      <h2 style="color:gray;"> Matheus Sousa de Andrade</h2>
+    </div>
 
-  <img  style=" width: 35px;
+    <img style=" width: 35px;
     height: 40px;
     top: 22%;
     position: absolute;
     padding-left: 43%;" src="img/logo.jpg">
-  </nav>
+   </nav> <header>
+    <h1>Verificador de Idade</h1>
+  </header>
 
-<header>
-<h1>Verificador de Idade</h1>
-</header>
-
-<section class="section">
-<form action="javascript:Calcular()">
-<div>
-<p>
-<label> Ano de Nascimento: </label>
-<input type="number" min="0" pattern="[0-9,.-,]+$" name="ano" class="campos" id="Nascimento" placeholder="Ano de nascimento" required>
-</p>
+  <section class="section">
+    <form action="javascript:Calcular()">
+      <div>
+        <p>
+          <label> Ano de Nascimento: </label>
+          <input type="number" min="0" pattern="[0-9,.-,]+$" name="ano" class="campos" id="Nascimento"
+            placeholder="Ano de nascimento" required>
+        </p>
 
 
-<p>Sexo:
+        <p>Sexo:
 
-<input type="radio" name="sexo" id="M" checked value="0">
-<label for="M">Masculino</label>
+          <input type="radio" name="sexo" id="M" checked value="0">
+          <label for="M">Masculino</label>
 
-<input type="radio" name="sexo" id="F" value="1">
-<label for="F">Feminino</label>
+          <input type="radio" name="sexo" id="F" value="1">
+          <label for="F">Feminino</label>
 
-</p>
+        </p>
 
-<p>
-<input class="btn" type="submit"  value="Calcular Idade">
-</p>
+        <p>
+          <input class="btn" type="submit" value="Calcular Idade">
+        </p>
 
-</div>
-</form>
+      </div>
+    </form>
 
 <div id="foto">
-<h4 id="msg"> </h4>
-<img id="imagem" src="img/int.jpg">
+  <h4 id="msg"> </h4>
+  <img id="imagem" src="img/int.jpg">
 </div>
+
 
 <form action="javascript:CalcularIMC()">
 </section >
